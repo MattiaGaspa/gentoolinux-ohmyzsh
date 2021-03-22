@@ -32,16 +32,16 @@ This plugin adds some aliases and functions to work with Gentoo Linux
 You can find the ebuild in my repository (https://github.com/MattiaG-afk/mine-gentoo-repository/blob/main/app-shells/gentoo-ohmyzsh/gentoo-ohmyzsh-1.0.0.ebuild)
 ### Manual installation
 You need to install the ohmyzsh framework (https://github.com/ohmyzsh/ohmyzsh) with:
-'''shell
+```shell
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-'''
+```
 Next, you have to clone this plugin in ~/.oh-my-zsh/custom/plugins/gentoo:
-'''shell
+```shell
 git clone https://github.com/MattiaG-afk/gentoo-ohmyzsh.git ${ZSG_CUSTOM:-~/.oh-my-zsh/custom}/plugins/gentoo
-'''
+```
 Finally, open .zshrc and enable the plugins by adding 'gentoo' in 'plugins=(...)':
-'''shell
+```shell
 ...other stuff here...
 plugins=(git gentoo)
 ...other stuff here...
-'''
+```
