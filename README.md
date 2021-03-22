@@ -45,3 +45,7 @@ Finally, open .zshrc and enable the plugins by adding 'gentoo' in 'plugins=(...)
 plugins=(git gentoo)
 ...other stuff here...
 ```
+Now restart your terminal, or run:
+```shell
+source ~/.zshrc
+```
