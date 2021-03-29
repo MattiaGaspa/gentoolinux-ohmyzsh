@@ -17,5 +17,4 @@ fi
 if (( $+commands[euse] )); then
     alias nuse='sudo euse -E '
     alias duse='sudo euse -D '
-
 fi
