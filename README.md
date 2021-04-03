@@ -10,7 +10,7 @@ This plugin adds some aliases and functions to work with Gentoo Linux
 | lbin     | sudo emerge -K <atom>              | Install the <atom> packet using a local binary                      |
 | rbin     | sudo emerge -G <atom>              | Install the <atom> packet using a remote binary                     |
 | remove   | sudo emerge -C <atom>              | Uninstall the <atom> packet in the system                           |
-| search   | emerge --s <atom>                  | Search the <atom> packet in the local repository                    |
+| search   | emerge -s <atom>                   | Search the <atom> packet in the local repository                    |
 | sync     | sudo emerge --sync                 | Sync the local repository with the remote repository                |
 | upgrade  | sudo emerge -aDuN world            | Update the packages in the local system                             |
 | clean    | sudo emerge --depclean             | Delete the unwanted software                                        |
