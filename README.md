@@ -28,7 +28,7 @@ This plugin adds some aliases and functions to work with Gentoo Linux
 | duse     | sudo euse -D <use>                 | Delete th <use> flag in /etc/portage/make.conf                      |
 
 ## Installation
-You need to install the ohmyzsh framework (https://github.com/ohmyzsh/ohmyzsh) with:
+You need to install the [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh) with:
 ```shell
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
