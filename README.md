@@ -21,7 +21,9 @@ This plugin adds some aliases and functions to work with Gentoo Linux
 | cleandist| sudo eclean --deep distfiles       | Clean files from /usr/portage/distfiles                             |
 | cleanpkg | sudo eclean-pkg                    | Clean  files from /usr/portage/packages                             |
 #### EUSE
- 
+
+Of course you need to install the [gentoolkit](https://packages.gentoo.org/packages/app-portage/gentoolkit) packet.
+
 | Alias    | Command                            | Description                                                         |
 |----------|------------------------------------|---------------------------------------------------------------------|
 | nuse     | sudo euse -E <use>                 | Add th <use> flag in /etc/portage/make.conf                         |
