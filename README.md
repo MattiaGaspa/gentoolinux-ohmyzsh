@@ -28,7 +28,14 @@ Of course you need to install the [gentoolkit](https://packages.gentoo.org/packa
 |----------|------------------------------------|---------------------------------------------------------------------|
 | nuse     | sudo euse -E <use>                 | Add th <use> flag in /etc/portage/make.conf                         |
 | duse     | sudo euse -D <use>                 | Delete th <use> flag in /etc/portage/make.conf                      |
+#### EUSE
 
+| Alias    | Command                            | Description                                                         |
+|----------|------------------------------------|---------------------------------------------------------------------|
+| make     | sudo vim /etc/portage/make.conf    | Open the make.conf configuration file                               |
+| mask     | sudo vim /etc/portage/package.mask | Open the package.mask configuration file                            |
+| use      | sudo vim /etc/portage/package.use  | Open the package.use configuration file                             |
+| repos    | sudo vim /etc/portage/repos.conf   | Open the repos.conf configuration file                              |
 ## Installation
 You need to install the [ohmyzsh framework](https://github.com/ohmyzsh/ohmyzsh) with:
 ```shell
