@@ -18,3 +18,10 @@ if (( $+commands[euse] )); then
     alias nuse='sudo euse -E '
     alias duse='sudo euse -D '
 fi
+
+if (( $+commands[vim] )); then
+    alias make='sudo vim /etc/portage/make.conf'
+    alias mask='sudo vim /etc/portage/package.mask'
+    alias use='sudo vim /etc/portage/package.use'
+    alias repos='sudo vim /etc/portage/repos.conf'
+fi
