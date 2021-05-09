@@ -55,6 +55,8 @@ Of course you need to install the [gentoolkit](https://packages.gentoo.org/packa
 | duse     | sudo euse -D <use>                 | Delete th <use> flag in /etc/portage/make.conf                      |
 #### EUSE
 
+Of course you need to install the [gentoolkit](https://packages.gentoo.org/packages/app-portage/gentoolkit) packet.
+
 | Alias    | Command                            | Description                                                         |
 |----------|------------------------------------|---------------------------------------------------------------------|
 | make     | sudo vim /etc/portage/make.conf    | Open the make.conf configuration file                               |
@@ -76,7 +78,7 @@ Finally, open .zshrc and enable the plugins by adding 'gentoo' in 'plugins=(...)
 plugins=(git gentoo)
 ...other stuff here...
 ```
-If you don't have genlop installed you will need to install it with the command:
+If you don't have [gentoolkit](https://packages.gentoo.org/packages/app-portage/gentoolkit) installed you will need to install it with the command:
 ```shell
 sudo emerge genlop
 ```
