@@ -14,6 +14,31 @@ This plugin adds some aliases and functions to work with Gentoo Linux
 | sync     | sudo emerge --sync                 | Sync the local repository with the remote repository                |
 | upgrade  | sudo emerge -aDuN world            | Update the packages in the local system                             |
 | clean    | sudo emerge --depclean             | Delete the unwanted software                                        |
+#### GENLOP
+
+| Alias    | Command                            | Description                                                         |
+|----------|------------------------------------|---------------------------------------------------------------------|
+| ghistory | sudo genlop -l                     | Show full merge history                                             |
+| eta      | sudo genlop -c                     | Display the currently compiling packages (if any)                   |
+| weta     | watch -ct -n 1 sudo genlop -c      | Display the currently compiling packages (if any), with refresh     |
+| ginfo    | sudo genlop -i <atom>              | Extra infos for the selected <atom> (build specific USE, CFLAGS)    |
+| guhistory| sudo genlop -u                     | Show when packages have been unmerged                               |
+| estimate | sudo genlop -t <atom>              | Calculate merge time for the specific <atom(s)>                     |
+#### QLOP
+
+| Alias    | Command                            | Description                                                         |
+|----------|------------------------------------|---------------------------------------------------------------------|
+| summary  | sudo qlop -c                       | Print summary of average merges                                     |
+| time     | sudo qlop -t                       | Print time taken to complete action                                 |
+| average  | sudo qlop -a                       | Print average time taken to complete action                         |
+| human    | sudo qlop -H                       | Print elapsed time in human readable format                         |
+| machine  | sudo genlop -M                     | Print start/elapsed time as seconds with no formatting              |
+| qmhistory| sudo qlop -m                       | Show merge history                                                  |
+| quhistory| sudo qlop -u                       | Show unmerge history                                                |
+| qahistory| sudo qlop -U                       | Show autoclean unmerge history                                      |
+| qshistory| sudo qlop -s                       | Show sync histroy                                                   |
+| endtime  | sudo qlop -e                       | Report time at which the operation finished (iso started)           |
+| running  | sudo qlop -r                       | Show current emerging packages                                      |
 #### ECLEAN
  
 | Alias    | Command                            | Description                                                         |
@@ -50,6 +75,10 @@ Finally, open .zshrc and enable the plugins by adding 'gentoo' in 'plugins=(...)
 ...other stuff here...
 plugins=(git gentoo)
 ...other stuff here...
+```
+If you don't have genlop installed you will need to install it with the command:
+```shell
+sudo emerge genlop
 ```
 Now restart your terminal, or run:
 ```shell
