@@ -22,7 +22,7 @@ if (( $+commands[qlop] )); then
     alias time='sudo qlop -t '
     alias average='sudo qlop -a '
     alias human='sudo qlop -H '
-    alias machine='sudo genlop -M '
+    alias machine='sudo qlop -M '
     alias qmhistory='sudo qlop -m '
     alias quhistory='sudo qlop -u '
     alias qahistory='sudo qlop -U '
