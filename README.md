@@ -32,7 +32,7 @@ This plugin adds some aliases and functions to work with Gentoo Linux
 | time     | sudo qlop -t                       | Print time taken to complete action                                 |
 | average  | sudo qlop -a                       | Print average time taken to complete action                         |
 | human    | sudo qlop -H                       | Print elapsed time in human readable format                         |
-| machine  | sudo genlop -M                     | Print start/elapsed time as seconds with no formatting              |
+| machine  | sudo qlop -M                       | Print start/elapsed time as seconds with no formatting              |
 | qmhistory| sudo qlop -m                       | Show merge history                                                  |
 | quhistory| sudo qlop -u                       | Show unmerge history                                                |
 | qahistory| sudo qlop -U                       | Show autoclean unmerge history                                      |
