@@ -76,7 +76,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 ```
 Next, you have to clone this plugin in ~/.oh-my-zsh/custom/plugins/gentoolinux:
 ```shell
-git clone https://github.com/MattiaG-afk/gentoolinux.git ${ZSG_CUSTOM:-~/.oh-my-zsh/custom}/plugins/gentoolinux
+git clone https://github.com/MattiaG-afk/gentoolinux-ohmyzsh.git ${ZSG_CUSTOM:-~/.oh-my-zsh/custom}/plugins/gentoolinux
 ```
 Finally, open .zshrc and enable the plugins by adding 'gentoo' in 'plugins=(...)':
 ```zsh
