@@ -2,7 +2,7 @@
 This plugin adds some aliases and functions to work with Gentoo Linux
 
 ## Features
-#### EMERGE
+### EMERGE
  
 | Alias    | Command                            | Description                                                         |
 |----------|------------------------------------|---------------------------------------------------------------------|
@@ -14,7 +14,7 @@ This plugin adds some aliases and functions to work with Gentoo Linux
 | sync     | sudo emerge --sync                 | Sync the local repository with the remote repository                |
 | upgrade  | sudo emerge -aDuN world            | Update the packages in the local system                             |
 | clean    | sudo emerge --depclean             | Delete the unwanted software                                        |
-#### GENLOP
+### GENLOP
 
 | Alias    | Command                            | Description                                                         |
 |----------|------------------------------------|---------------------------------------------------------------------|
@@ -24,7 +24,7 @@ This plugin adds some aliases and functions to work with Gentoo Linux
 | ginfo    | sudo genlop -i <atom>              | Extra infos for the selected <atom> (build specific USE, CFLAGS)    |
 | guhistory| sudo genlop -u                     | Show when packages have been unmerged                               |
 | estimate | sudo genlop -t <atom>              | Calculate merge time for the specific <atom(s)>                     |
-#### QLOP
+### QLOP
 
 | Alias    | Command                            | Description                                                         |
 |----------|------------------------------------|---------------------------------------------------------------------|
@@ -39,13 +39,13 @@ This plugin adds some aliases and functions to work with Gentoo Linux
 | qshistory| sudo qlop -s                       | Show sync histroy                                                   |
 | endtime  | sudo qlop -e                       | Report time at which the operation finished (iso started)           |
 | running  | sudo qlop -r                       | Show current emerging packages                                      |
-#### ECLEAN
+### ECLEAN
  
 | Alias    | Command                            | Description                                                         |
 |----------|------------------------------------|---------------------------------------------------------------------|
 | cleandist| sudo eclean --deep distfiles       | Clean files from /usr/portage/distfiles                             |
 | cleanpkg | sudo eclean-pkg                    | Clean  files from /usr/portage/packages                             |
-#### EUSE
+### EUSE
 
 Of course you need to install the [gentoolkit](https://packages.gentoo.org/packages/app-portage/gentoolkit) packet.
 
@@ -53,10 +53,8 @@ Of course you need to install the [gentoolkit](https://packages.gentoo.org/packa
 |----------|------------------------------------|---------------------------------------------------------------------|
 | nuse     | sudo euse -E <use>                 | Add th <use> flag in /etc/portage/make.conf                         |
 | duse     | sudo euse -D <use>                 | Delete th <use> flag in /etc/portage/make.conf                      |
-#### EUSE
-
-Of course you need to install the [gentoolkit](https://packages.gentoo.org/packages/app-portage/gentoolkit) packet.
-
+### VIM
+ 
 | Alias    | Command                            | Description                                                         |
 |----------|------------------------------------|---------------------------------------------------------------------|
 | make     | sudo vim /etc/portage/make.conf    | Open the make.conf configuration file                               |
