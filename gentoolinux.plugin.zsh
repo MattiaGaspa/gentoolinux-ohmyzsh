@@ -8,11 +8,16 @@ alias emsync='sudo emerge --sync '
 alias emup='sudo emerge -aDuN world '
 alias emclean='sudo emerge --depclean '
 
+# EIX
+alias eisync='sudo eix-sync '
+alias eirup='sudo eix-remote update '
+alias eirov='eix -R '
+
 # PORTAGEQ
 alias pocolor='portageq colormap '
 alias podist='portageq distdir '
 alias povar='portageq envvar '
-alias pomirror='portageq gentoo_mirrors'
+alias pomirror='portageq gentoo_mirrors '
 alias poorphan='portageq --orphaned '
 
 # GENLOP
@@ -49,3 +54,5 @@ alias make.conf='sudo vim /etc/portage/make.conf '
 alias package.mask='sudo vim /etc/portage/package.mask '
 alias package.use='sudo vim /etc/portage/package.use '
 alias repos.conf='sudo vim /etc/portage/repos.conf '
+alias repos.conf='sudo vim /etc/eix-sync.conf '
+alias repos.conf='sudo vim /etc/eixrc '
